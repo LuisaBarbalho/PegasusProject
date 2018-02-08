@@ -41,6 +41,9 @@ Route::group(['namespace' => 'Admin'], function(){
     });
 
     Route::group(['prefix' => 'formulario'], function(){
+        Route::group(['prefix' => 'cadastrar'], function(){
+            Route::get('/categoria', 'controllerForm@createListCategory');
+        });
 
         Route::group(['prefix' => 'relacionar'], function(){
             Route::get('/usuario', 'controllerForm@linkFormUser');

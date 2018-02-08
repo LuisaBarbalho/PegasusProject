@@ -52,7 +52,7 @@
                                 <li class="dropdown-header">Cadastros Básicos</li>
                                 <li><a class="dropdown-item" href="{{route('form.create')}}">Formulários</a></li>
                                 <li><a class="dropdown-item" href="#">Respostas e Pesos</a></li>
-                                <li><a class="dropdown-item" href="#">Categorias</a></li>
+                                <li><a class="dropdown-item" href="{{ url('formulario/cadastrar/categoria') }}">Categorias</a></li>
                                 <li><a class="dropdown-item" href="#">Perguntas</a></li>
                                 <li><a class="dropdown-item" href="#">Usuários</a></li>
 

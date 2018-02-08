@@ -23,6 +23,11 @@ class controllerForm extends Controller
         return view('form.create-2', compact('title'));
     }
 
+    public function createListCategory(){
+        $title = "Cadastrar Categoria";
+        return view('form.viewCreateListCategory', compact('title'));
+    }
+
     public function linkFormUser(){
         $title = 'Relacionar formulário(s) & usuário(s)';
         $descricao = 'Usuário';
