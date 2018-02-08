@@ -40,6 +40,15 @@ Route::group(['namespace' => 'Admin'], function(){
         Route::get('/profissao', 'controllerBasicEntry@createListProfession');
     });
 
+    Route::group(['prefix' => 'formulario'], function(){
+
+        Route::group(['prefix' => 'relacionar'], function(){
+            Route::get('/usuario', 'controllerForm@linkFormUser');
+            Route::get('/pergunta', 'controllerForm@linkFormQuestion');
+            Route::get('/resposta-peso', 'controllerForm@linkFormAnswer');
+        });
+    });
+
     Route::resource('audit', 'controllerAudit');
 
     Route::resource('form', 'controllerForm');

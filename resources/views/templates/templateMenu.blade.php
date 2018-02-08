@@ -63,9 +63,9 @@
                                 <li><a class="dropdown-item" href="{{ url('cadastros-essenciais/profissao') }}">Profissões</a></li>
 
                                 <li class="dropdown-header">Relacionar Formulários</li>
-                                <li><a class="dropdown-item" href="#">Perguntas</a></li>
-                                <li><a class="dropdown-item" href="#">Respostas e Pesos</a></li>
-                                <li><a class="dropdown-item" href="#">Usuários</a></li>
+                                <li><a class="dropdown-item" href="{{ url('formulario/relacionar/pergunta') }}">Perguntas</a></li>
+                                <li><a class="dropdown-item" href="{{ url('formulario/relacionar/resposta-peso') }}">Respostas e Pesos</a></li>
+                                <li><a class="dropdown-item" href="{{ url('formulario/relacionar/usuario') }}">Usuários</a></li>
                             </ul>
                         </li>
                         <!-- Consultar Formulário(s) -->
