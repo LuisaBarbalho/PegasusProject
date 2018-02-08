@@ -58,9 +58,9 @@
 
                                 <li class="dropdown-header">Cadastros Essenciais</li>
                                 <li><a class="dropdown-item" href="#">Perfis</a></li>
-                                <li><a class="dropdown-item" href="#">Etnias</a></li>
-                                <li><a class="dropdown-item" href="#">Gêneros</a></li>
-                                <li><a class="dropdown-item" href="#">Profissões</a></li>
+                                <li><a class="dropdown-item" href="{{ url('cadastros-essenciais/etnia') }}">Etnias</a></li>
+                                <li><a class="dropdown-item" href="{{ url('cadastros-essenciais/genero') }}">Gêneros</a></li>
+                                <li><a class="dropdown-item" href="{{ url('cadastros-essenciais/profissao') }}">Profissões</a></li>
 
                                 <li class="dropdown-header">Relacionar Formulários</li>
                                 <li><a class="dropdown-item" href="#">Perguntas</a></li>
