@@ -28,6 +28,11 @@ Route::get('/formulario/continue', 'FormController@createContinue');*/
 
 Route::group(['namespace' => 'Admin'], function(){
 
+    Route::group(['prefix' => 'login'], function(){
+        Route::get('/entrar', 'controllerLogin@login');
+        Route::get('/cadastrar', 'controllerLogin@createLogin');
+    });
+
     Route::group(['prefix' => 'estatistica'], function(){
         Route::get('/detalhes', 'controllerStatistic@detail');
         Route::get('/', 'controllerStatistic@index');
